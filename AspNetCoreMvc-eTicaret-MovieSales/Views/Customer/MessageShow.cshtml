@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "MessageShow";
+    Layout = "~/Views/Shared/_LayoutMovie.cshtml";
+}
+
+<h2>İşlem Sonucu</h2>
+@if (TempData["mesaj"] != null)
+{
+    <alert class="alert alert-success mt-10">
+        @TempData["mesaj"];
+    </alert>
+}
